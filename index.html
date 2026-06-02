@@ -180,21 +180,21 @@
                             <div id="counter" class="row justify-content-center text-center">
                                 <div class="col-lg-3 col-6 text-center">
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <h4 class="counter-value display-1 banner-size" data-count="3">0</h4><span
+                                        <h4 class="counter-value display-1 banner-size" data-count="4">0</h4><span
                                             class="text-primary display-1 fw-lighter">+</span>
                                     </div>
                                     <p class="text-capitalize mb-0">Years Experience</p>
                                 </div>
                                 <div class="col-lg-3 col-6 text-center">
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <h4 class="counter-value display-1 banner-size" data-count="20000000">0</h4><span
+                                        <h4 class="counter-value display-1 banner-size" data-count="60000000">0</h4><span
                                             class="text-primary display-1 fw-lighter">+</span>
                                     </div>
                                     <p class="text-capitalize mb-0">Generated Views</p>
                                 </div>
                                 <div class="col-lg-3 col-6 text-center">
                                     <div class="d-flex justify-content-center align-items-center">
-                                        <h4 class="counter-value display-1 banner-size" data-count="50">0</h4><span
+                                        <h4 class="counter-value display-1 banner-size" data-count="140">0</h4><span
                                             class="text-primary display-1 fw-lighter">+</span>
                                     </div>
                                     <p class="text-capitalize mb-0">Projects</p>
@@ -334,6 +334,148 @@
             </div>
         </section>
 
+        <section id="retention" class="py-5 padding-medium">
+            <style>
+                .retention-card {
+                    overflow: hidden;
+                    background-color: rgba(255, 255, 255, 0.03);
+                    box-shadow: 0px 5px 25px rgba(106, 30, 188, 0.1);
+                    transition: border-color 0.3s ease;
+                    cursor: pointer; /* Mutatja a látogatónak, hogy rákattinthat */
+                }
+                .retention-card:hover {
+                    border-color: rgba(106, 30, 188, 0.6) !important;
+                }
+                .retention-card img {
+                    transition: transform 0.4s ease-in-out;
+                    object-fit: cover;
+                }
+                .retention-card:hover img {
+                    transform: scale(1.15); 
+                }
+                /* Modal testreszabás, hogy passzoljon a sötét témádhoz */
+                .retention-modal .modal-content {
+                    background-color: rgba(15, 15, 15, 0.95);
+                    border: 1px solid rgba(106, 30, 188, 0.3);
+                    box-shadow: 0 0 40px rgba(106, 30, 188, 0.25);
+                }
+            </style>
+
+            <div class="container text-white" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h3 class="display-3">Retention Mastery<span class="text-primary">.</span></h3>
+                    <p class="fs-5 text-light opacity-75">Numbers don't lie.</p>
+                </div>
+
+                <div class="row align-items-center justify-content-center g-5">
+                    <div class="col-lg-5">
+                        <div class="border-start border-primary ps-4 border-opacity-50 mb-5">
+                            <span class="badge bg-primary mb-2 px-3 py-2 text-uppercase tracking-wider">Leaderboard Top #1</span>
+                            <h4 class="display-6 fw-bold">Outperforming the Best</h4>
+                            <p class="text-light opacity-75 mb-0">
+                                Two of my edited videos achieved the best of the best retention rates on <strong>Retti AI</strong>. 
+                                One of them dominated the charts as the <strong>#1 video on the Weekly Leaderboard</strong>, outperforming MrBeast. 
+                                Another Video, on the Monthly Leaderboard, it held the 5 position, being outperformed <em>only</em> by MrBeast himself.
+                            </p>
+                        </div>
+
+                        <div class="border-start border-primary ps-4 border-opacity-50">
+                            <h4 class="display-6 fw-bold">74%+ Retention Rate</h4>
+                            <p class="text-light opacity-75 mb-0">
+                                By combining perfect pacing, perfectly timed dynamic graphics, and psychological sound design, 
+                                I constantly push audience retention way above the industry average.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="row g-3 justify-content-center">
+                            
+                            <div class="col-12 mb-2 d-flex justify-content-center">
+                                <div class="position-relative p-2 rounded-4 border border-light border-opacity-10 retention-card" 
+                                     style="max-width: 480px; width: 100%;"
+                                     data-bs-toggle="modal" data-bs-target="#graphModal">
+                                    <img src="images/retention-graph.png" alt="70%+ Retention Graph" class="img-fluid rounded-3 w-100">
+                                    
+                                    <div class="position-absolute top-0 end-0 m-3">
+                                        <span class="badge bg-dark bg-opacity-75 border border-primary border-opacity-50 px-3 py-2 text-white" style="font-size: 0.8rem;">
+                                            <span class="text-primary fw-bold">74%+</span> Retention Rate
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="position-relative p-2 rounded-4 border border-light border-opacity-10 retention-card h-100"
+                                     data-bs-toggle="modal" data-bs-target="#retti1Modal">
+                                    <img src="images/retti-top1.png" alt="Retti AI Weekly Leaderboard Top 1" class="img-fluid rounded-3 w-100 h-100">
+                                    <div class="position-absolute top-0 start-0 m-3">
+                                        <span class="badge bg-success text-uppercase" style="font-size: 0.75rem;">Weekly #1</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <div class="position-relative p-2 rounded-4 border border-light border-opacity-10 retention-card h-100"
+                                     data-bs-toggle="modal" data-bs-target="#retti2Modal">
+                                    <img src="images/retti-top2.png" alt="Retti AI Monthly Leaderboard" class="img-fluid rounded-3 w-100 h-100">
+                                    <div class="position-absolute top-0 start-0 m-3">
+                                        <span class="badge bg-primary text-uppercase" style="font-size: 0.75rem;">Monthly Top</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade retention-modal" id="graphModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-4 p-2">
+                        <div class="modal-header border-0 pb-0 justify-content-end">
+                            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center pt-0">
+                            <img src="images/retention-graph.png" alt="70%+ Retention Graph Full" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade retention-modal" id="retti1Modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-4 p-2">
+                        <div class="modal-header border-0 pb-0 justify-content-end">
+                            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center pt-0">
+                            <img src="images/retti-top1.png" alt="Retti AI Weekly Top 1 Full" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade retention-modal" id="retti2Modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content rounded-4 p-2">
+                        <div class="modal-header border-0 pb-0 justify-content-end">
+                            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center pt-0">
+                            <img src="images/retti-top2.png" alt="Retti AI Monthly Top Full" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <section id="portfolio" class="padding-medium container" data-aos="fade-up">
             <div class="text-center">
                 <h3 class="display-3">Projects<span class="text-primary">.</span></h3>
@@ -362,21 +504,21 @@
                 <div class="item web col-md-6 p-3">
                     <div class="blog-post">
                         <div class="image-zoom rounded-3 ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/ziKpuuX4LhA?si=kTl0vFOjGrQ-zaY-"
+                            <iframe src="https://www.youtube.com/embed/dyvG2QWr7Ko?si=1m--ZW3U211r8qP_"
                                 title="YouTube video" allowfullscreen></iframe>
                         </div>
-                        <p class="text-uppercase text-primary fw-semibold mt-3">KDS</p>
-                        <h5 class="display-6">My first time making videos with complex animations!</h5>
+                        <p class="text-uppercase text-primary fw-semibold mt-3">Sunnblox</p>
+                        <h5 class="display-6">An Epic Video!</h5>
                     </div>
                 </div>
 
                 <div class="item logo col-md-6 p-3">
                     <div class="blog-post">
                         <div class="image-zoom rounded-3 ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/nWte48yYZbA?si=fpoUK8yiYZ2PFGCI"
+                            <iframe src="ttps://www.youtube.com/embed/lTSEXAVSE_A?si=Cf6qJE-UU-qQfMbN"
                                 title="YouTube video" allowfullscreen></iframe>
                         </div>
-                        <p class="text-uppercase text-primary fw-semibold mt-3">Sunnblox</p>
+                        <p class="text-uppercase text-primary fw-semibold mt-3">Sunn</p>
                         <h5 class="display-6">Recently, one of my favorite projects.</h5>
                     </div>
                 </div>
@@ -384,44 +526,44 @@
                 <div class="item web col-md-6 p-3">
                     <div class="blog-post">
                         <div class="image-zoom rounded-3 ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/QD1gmMLx9U4?si=uehTvuGMTZ_QF-lA"
+                            <iframe src="https://www.youtube.com/embed/zpUpGLAouyk?si=Fe0v11JLRMa4o6B7"
                                 title="YouTube video" allowfullscreen></iframe>
                         </div>
-                        <p class="text-uppercase text-primary fw-semibold mt-3">KDS CSGO</p>
-                        <h5 class="display-6">I am just happy how this video turned out :)</h5>
+                        <p class="text-uppercase text-primary fw-semibold mt-3">HunterGang</p>
+                        <h5 class="display-6">My first IRL style video :)</h5>
                     </div>
                 </div>
 
                 <div class="item logo col-md-6 p-3">
                     <div class="blog-post">
                         <div class="image-zoom rounded-3 ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/9sXpmr8sYd0?si=YIFV_R52sAlJB5ZG"
+                            <iframe src="https://www.youtube.com/embed/A1jBEkeBM3c?si=DaQuxle5m1T2J3Ko"
                                 title="YouTube video" allowfullscreen></iframe>
                         </div>
-                        <p class="text-uppercase text-primary fw-semibold mt-3">KDS CSGO</p>
-                        <h5 class="display-6">Kinda cool isn't it? :D</h5>
+                        <p class="text-uppercase text-primary fw-semibold mt-3">Venc30</p>
+                        <h5 class="display-6">Fun intro!</h5>
                     </div>
                 </div>
 
                 <div class="item web col-md-6 p-3">
                     <div class="blog-post">
                         <div class="image-zoom rounded-3 ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/hIHAFXQkgi8?si=0E1B4FEZ84Rqn3Xv"
+                            <iframe src="https://www.youtube.com/embed/5Ss0CrPkXDg?si=SozgdgEAaM76MEpa"
                                 title="YouTube video" allowfullscreen></iframe>
                         </div>
-                        <p class="text-uppercase text-primary fw-semibold mt-3">VENC30</p>
-                        <h5 class="display-6">Crazy intro :)</h5>
+                        <p class="text-uppercase text-primary fw-semibold mt-3">Sunnblox</p>
+                        <h5 class="display-6">Really eye-catching intro :)</h5>
                     </div>
                 </div>
 
                 <div class="item logo col-md-6 p-3">
                     <div class="blog-post">
                         <div class="image-zoom rounded-3 ratio ratio-16x9">
-                            <iframe src="https://www.youtube.com/embed/DZZEkQd-nf8?si=xN20fjIq3kcqu-AK"
+                            <iframe src="https://www.youtube.com/embed/keREH8eH6qE?si=kvITmsx2-LBTfG51"
                                 title="YouTube video" allowfullscreen></iframe>
                         </div>
-                        <p class="text-uppercase text-primary fw-semibold mt-3">VENC30</p>
-                        <h5 class="display-6">Just a fun intro to work on</h5>
+                        <p class="text-uppercase text-primary fw-semibold mt-3">KDSCSGO</p>
+                        <h5 class="display-6">Yeah, i kinda do every kind of videos :D</h5>
                     </div>
                 </div>
             </div>
